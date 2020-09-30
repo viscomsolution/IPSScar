@@ -28,3 +28,7 @@
 # Executables
 *.out
 *.app
+*.pdb
+windows/ExampleCs/obj/
+windows/ExampleCs_x64/obj/
+windows/.vs/ExampleCs_2015/v15/Server/

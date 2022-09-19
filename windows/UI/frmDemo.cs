@@ -12,7 +12,6 @@ using System.IO;
 using System.Drawing.Drawing2D;
 using System.Net;
 using System.Resources;
-using TGMT;
 using System.Threading.Tasks;
 using IPSS;
 using System.Collections.Specialized;
@@ -592,6 +591,11 @@ namespace TGMTcs
 
         private void btnConnectCameraIP_Click(object sender, EventArgs e)
         {
+            if(streamPlayer == null)
+            {
+                MessageBox.Show("Không tìm thấy file StreamPlayer.dll");
+                return;
+            }
             if (btnConnectCameraIP.Text == "Start")
             {
                 string text = txtIpAddress.Text;
